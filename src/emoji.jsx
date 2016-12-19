@@ -18,7 +18,7 @@ const Emoji = React.createClass({
   },
 
   createMarkup: function() {
-    return {__html: emojione.shortnameToImage(this.props.shortname)};
+    return {__html: emojione.shortnameToUnicode(this.props.shortname)};
   },
 
   render: function() {
